@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 class Transaction {
@@ -104,7 +105,7 @@ class TransactionManagement {
     }
 
     // 4. List all transactions
-    public void listTransactions() {
+    public List<Transaction> listTransactions() {
         if (transactions.isEmpty()) {
             System.out.println("No transactions found.");
         } else {
@@ -112,6 +113,7 @@ class TransactionManagement {
                 System.out.println(t);
             }
         }
+		return transactions;
     }
 
     // 5. Void a transaction (undo)
