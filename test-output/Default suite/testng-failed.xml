@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LoanExcel_Input">
+      <class name="AccountExcel_Input">
         <methods>
+          <include name="testCreateAccount"/>
+          <include name="testUpdateAccountHolderName"/>
           <include name="setUp"/>
-          <include name="testCalculateTotalPayable"/>
-          <include name="testApplyLoan"/>
         </methods>
-      </class> <!-- LoanExcel_Input -->
+      </class> <!-- AccountExcel_Input -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
