@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TransactionManagementSuite">
+    <test name="TransferMoneyTest">
+        <parameter name="fromAccount" value="1001"/>
+        <parameter name="toAccount" value="1002"/>
+        <parameter name="amount" value="2000.00"/>
+        <classes>
+            <class name="TransactionManagementTest"/>
+        </classes>
+    </test>
+    <test name="RefundTransactionTest">
+        <parameter name="fromAccount" value="1002"/>
+        <parameter name="toAccount" value="1001"/>
+        <parameter name="amount" value="500.00"/>
+        <classes>
+            <class name="TransactionManagementTest"/>
+        </classes>
+    </test>
+    <test name="CheckTransactionLimitTest">
+        <parameter name="amount" value="6000.00"/>
+        <classes>
+            <class name="TransactionManagementTest"/>
+        </classes>
+    </test>
+    <test name="VoidTransactionTest">
+        <parameter name="fromAccount" value="1001"/>
+        <parameter name="toAccount" value="1002"/>
+        <parameter name="amount" value="1000.00"/>
+        <classes>
+            <class name="TransactionManagementTest"/>
+        </classes>
+    </test>
+</suite>
+
