@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LoanManagementSuite">
+  
+  <test name="ApplyLoanTest">
+    <classes>
+      <class name="LoanXMLtestcases"/>
+    </classes>
+  </test>
+
+  <test name="GetLoanDetailsTest">
+    <parameter name="accountNumber" value="12345"/>
+    <classes>
+      <class name="LoanXMLtestcases"/>
+    </classes>
+  </test>
+
+  <test name="CalculateTotalPayableTest">
+    <parameter name="accountNumber" value="67890"/> <!-- Ensure this parameter is provided -->
+    <classes>
+      <class name="LoanXMLtestcases"/>
+    </classes>
+  </test>
+
+</suite>
