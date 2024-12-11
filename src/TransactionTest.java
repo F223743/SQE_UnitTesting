@@ -10,10 +10,9 @@ public class TransactionTest {
 
     @BeforeClass
     public void setup() {
-        // Initialize AccountManagement and create test accounts
         accountManagement = new AccountManagement();
-        accountManagement.createAccount(1001, "Alice", 5000.0); // Initial balance
-        accountManagement.createAccount(1002, "Bob", 3000.0);   // Initial balance
+        accountManagement.createAccount(1001, "Sara", 500.0); 
+        accountManagement.createAccount(1002, "Ali", 300.0);   
         transactionManagement = new TransactionManagement(accountManagement);
     }
 

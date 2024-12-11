@@ -1,4 +1,4 @@
-
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="LoanManagementSuite">
   
   <test name="ApplyLoanTest">
@@ -15,7 +15,7 @@
   </test>
 
   <test name="CalculateTotalPayableTest">
-    <parameter name="accountNumber" value="67890"/> <!-- Ensure this parameter is provided -->
+    <parameter name="accountNumber" value="67890"/>
     <classes>
       <class name="LoanXMLtestcases"/>
     </classes>
